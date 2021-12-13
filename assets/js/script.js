@@ -1,6 +1,21 @@
+let message = [["Pas de travail, pas de dîplome. Pas de dipôme, pas de boulot. Pas de boulot... pas de boulot.", "no"], ["Bah alors, qu'est-ce qu'on fait ?", "innocent"],["Bosse feignasse", "panda"], ["C'est trop calme... j'aime pas trop beaucoup ça", "numerobis"]];
+
+function pickMessage(list) {
+    return list[Math.floor(Math.random() * list.length)];
+}
+
+
+function displayMsg(){
+    let test = pickMessage(message);
+     document.getElementById('sentence').textContent = test[0];
+     document.getElementById('gif').innerHTML = `<img class="imgGif" src="assets/img/${test[1]}.gif" alt="gif ${test[1]}">`;
+    console.log(test) 
+    }
+
+
 
 let count = 0;
-let modal = document.querySelector('#modal');
+let modal = document.getElementById('modal');
 
 document.addEventListener('keydown', function() {
     count = 1;
@@ -19,17 +34,19 @@ const control = () => {
         console.log("c'est bien continue")
     }
     else {
-        console.log("travaille"); 
-        modal.setAttribute("class", "modal active");    
+        console.log("travaille");
+        if(!document.getElementById('exampleModal').classList.contains('show')){
+
+        let elem = new bootstrap.Modal(document.getElementById('exampleModal')); 
+         elem.show(); 
+        displayMsg();
+        } 
+        
     }
     count = 0;
 }
 
-setInterval(control, 10000);
+setInterval(control, 5000);
 
 let btn = document.querySelector('.btn-close');
 
-btn.addEventListener('click', function() {
-    
-    modal.setAttribute("class", "modal disabled");
-})

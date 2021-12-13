@@ -58,3 +58,61 @@ h1 {
 .back-to-main {
     font-size:  30px;
 }
+
+.disabled{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body {
+    background-color: #540b0e;
+    color: #f8f9fa;
+}
+
+.titleMenu {
+    font-family: "Big Brother";
+    font-size: 8rem;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.laManu {
+    color: black;
+}
+
+.signOut {
+    text-align: right;
+    margin: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+
+.comment{
+    color: #540b0e;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 25rem;
+    margin-bottom: 4rem;
+}
+
+.imgGif{
+    height: 15rem;
+}
+
+#gif{
+    text-align: center;
+}
