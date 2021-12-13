@@ -1,0 +1,60 @@
+.containerMain {
+    background-color: #540b0e;
+    font-family: "Big Brother";
+    color: white;
+    height: 100vh;
+}
+
+.containerProf{
+    display:flex;
+    flex-direction: column;
+    border : 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-connexion {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    
+}
+
+
+@font-face {
+    font-family: "Big Brother";
+    src: url("/assets/font/BigBrother.woff") format("woff");
+}
+
+
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size:  100px;
+}
+
+.sub {
+    border-radius: 1cm;
+}
+
+
+
+.sub:hover {
+    background-color: #c54c50;
+}
+
+
+
+.back-to-main {
+    font-size:  30px;
+}
