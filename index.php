@@ -7,7 +7,7 @@ if(!isset($_SESSION["lvl_user"])){
 
 switch($_SESSION["lvl_user"]){
     case "1":
-        include("acccueil_eleve.php");
+        include("assets/page/popup.php");
         break;
     case "2":
         include("assets/page/accueil_prof.php");

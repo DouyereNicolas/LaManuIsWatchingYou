@@ -1,3 +1,4 @@
+    <h1 class="titleMenu"><span class="laManu">LA MANU</span><br>IS WATCHING YOU</h1>
 <?php 
     $dbh = new PDO('mysql:host=localhost;dbname=manuiswatchingyou', "root", "");
     $sqlQuery = "SELECT * FROM promo WHERE id_professor = ".$_SESSION["id_professor"];
@@ -56,7 +57,6 @@
 <script>
 function recharge(){
     window.location.reload();
-    //fetch("http://lamanuiswatchingyou/assets/function/setEvent.php")
 }
 
 setInterval(recharge, 5000);

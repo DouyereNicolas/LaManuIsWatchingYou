@@ -34,9 +34,10 @@ const control = () => {
         console.log("c'est bien continue")
     }
     else {
+            
         console.log("travaille");
         if(!document.getElementById('exampleModal').classList.contains('show')){
-
+            fetch("http://lamanuiswatchingyou/assets/function/setEvent.php")
         let elem = new bootstrap.Modal(document.getElementById('exampleModal')); 
          elem.show(); 
         displayMsg();

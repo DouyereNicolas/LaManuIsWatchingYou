@@ -15,7 +15,6 @@
             $_SESSION["id_user"] = $recipe['id_user'];
             $_SESSION["lvl_user"] = $recipe['lvl_user'];
         }
-        echo $_SESSION["lvl_user"];
         if($_SESSION["lvl_user"] == 2){
             $sqlQuery = 'SELECT * FROM professor WHERE id_user="'.$_SESSION["id_user"].'"';
             $recipesStatement = $dbh->prepare($sqlQuery);
@@ -26,8 +25,11 @@
             }
         }else{
             $utilisateur = 'SELECT * FROM student WHERE id_user = "'.$_SESSION["id_user"].'"';
-            foreach ($recipes as $recipe) {
-                $_SESSION["id_student"] = $recipe['id_student'];
+            $recipesStatement4 = $dbh->prepare($utilisateur);
+            $recipesStatement4->execute();
+            $recipes4 = $recipesStatement4->fetchAll();
+            foreach ($recipes4 as $recipe4) {
+                $_SESSION["id_student"] = $recipe4['id_student'];
             }
         }
         header('Location: ../../index.php');

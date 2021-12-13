@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Big Brother";
+    src: url("/assets/font/BigBrother.woff") format("woff");
+}
+
 .containerMain {
     background-color: #540b0e;
     font-family: "Big Brother";
@@ -17,14 +22,10 @@
     display: flex;
     justify-content: center;
     margin-top: 10vh;
-    
-}
-
-
-@font-face {
     font-family: "Big Brother";
-    src: url("/assets/font/BigBrother.woff") format("woff");
 }
+
+
 
 
 
@@ -92,6 +93,15 @@ body {
     margin: 1.5rem;
     font-size: 2rem;
     margin-bottom: 0;
+    
+}
+
+.signOut a{
+    color : white;
+}
+
+.signOut a:hover{
+    color: #c54c50;;
 }
 
 
@@ -105,6 +115,11 @@ body {
 }
 
 .logo img{
+    width: 25rem;
+    margin-bottom: 4rem;
+}
+
+.logoProf img{
     width: 25rem;
     margin-bottom: 4rem;
 }
