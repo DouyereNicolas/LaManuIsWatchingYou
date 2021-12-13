@@ -27,7 +27,6 @@ const control = () => {
 
 setInterval(control, 10000);
 
-<<<<<<< HEAD
 let btn = document.querySelector('.btn-close');
 
 btn.addEventListener('click', function() {
