@@ -56,6 +56,7 @@
 <script>
 function recharge(){
     window.location.reload();
+    //fetch("http://lamanuiswatchingyou/assets/function/setEvent.php")
 }
 
 setInterval(recharge, 5000);

@@ -26,6 +26,9 @@
             }
         }else{
             $utilisateur = 'SELECT * FROM student WHERE id_user = "'.$_SESSION["id_user"].'"';
+            foreach ($recipes as $recipe) {
+                $_SESSION["id_student"] = $recipe['id_student'];
+            }
         }
         header('Location: ../../index.php');
     }else{
