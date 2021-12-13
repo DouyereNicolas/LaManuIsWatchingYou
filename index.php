@@ -13,7 +13,7 @@ switch($_SESSION["lvl_user"]){
         include("assets/page/accueil_prof.php");
         break;
     default:
-        include("form_contact.php");
+        include("assets/page/form_contact.php");
         break;
     };
 include("footer.php");
