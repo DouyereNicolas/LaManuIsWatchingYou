@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
 
 let count = 0;
-
+let modal = document.querySelector('#modal');
 
 document.addEventListener('keydown', function() {
     count = 1;
@@ -21,12 +19,17 @@ const control = () => {
         console.log("c'est bien continue")
     }
     else {
-        console.log("travaille");
+        console.log("travaille"); 
+        modal.setAttribute("class", "modal active");    
     }
     count = 0;
 }
 
-
 setInterval(control, 10000);
 
->>>>>>> 13575421e1ab768176adcca35167df78d6461499
+let btn = document.querySelector('.btn-close');
+
+btn.addEventListener('click', function() {
+    
+    modal.setAttribute("class", "modal disabled");
+})
