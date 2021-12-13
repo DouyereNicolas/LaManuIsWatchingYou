@@ -1,10 +1,17 @@
-let keyboard;
+
 let count = 0;
 
 
 document.addEventListener('keydown', function() {
-    keyboard = false;
-    count++;
+    count = 1;
+})
+
+document.addEventListener('mousemove', function() {
+    count = 1;
+})
+
+document.addEventListener('click', function() {
+    count = 1;
 })
 
 const control = () => {
@@ -18,5 +25,5 @@ const control = () => {
 }
 
 
-setInterval(control, 36000000);
+setInterval(control, 10000);
 
