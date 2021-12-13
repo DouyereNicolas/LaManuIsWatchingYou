@@ -1,13 +1,16 @@
-
-
-.disabled {
-    display: none;
-}
-
-html {
+.containerMain {
     background-color: #540b0e;
     font-family: "Big Brother";
     color: white;
+    height: 100vh;
+}
+
+.containerProf{
+    display:flex;
+    flex-direction: column;
+    border : 1px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-connexion {
@@ -20,7 +23,7 @@ html {
 
 @font-face {
     font-family: "Big Brother";
-    src: url("font/BigBrother.woff") format("woff");
+    src: url("/assets/font/BigBrother.woff") format("woff");
 }
 
 
